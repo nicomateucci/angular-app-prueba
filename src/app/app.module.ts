@@ -1,11 +1,8 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
-import { AlumnoComponent } from './alumno/alumno.component';
-import { MaestroComponent } from './maestro/maestro.component';
 import { CounterComponent } from './counter/counter.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoAppComponent } from './todo-app/todo-app.component';
@@ -24,18 +21,8 @@ import { NavegacionComponent } from './navegacion/navegacion.component';
 import {PrimerPaginaResolver} from './primer-pagina/primer-pagina.resolve';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule
-  ],
-  declarations: [ 
-    AppComponent, 
-    HelloComponent, 
-    AlumnoComponent, 
-    MaestroComponent,
+  declarations: [
+    AppComponent,
     CounterComponent,
     TodoListComponent,
     TodoAppComponent,
@@ -46,8 +33,16 @@ import {PrimerPaginaResolver} from './primer-pagina/primer-pagina.resolve';
     LoginComponent,
     PrimerPaginaComponent,
     SegundaPaginaComponent,
-    NavegacionComponent ],
+    NavegacionComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
   providers: [TodoService, MovieService, PrimerPaginaResolver],
-  bootstrap:    [ AppComponent ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
