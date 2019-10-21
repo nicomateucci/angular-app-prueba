@@ -1,6 +1,9 @@
 # Ttads
 Componentes y codigo de prueba para clases
 
+[Editar en Stackblits](https://stackblitz.com/edit/angular-ynarcs).
+
+
 ## Referencias de real world app en (https://github.com/gothinkster/realworld)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
 
