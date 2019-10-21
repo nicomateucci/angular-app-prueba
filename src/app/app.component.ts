@@ -18,6 +18,7 @@ export class AppComponent {
   unTexto: any = 'hola';
   persona: any = {};
   formControl = new FormControl('prueba');
+  
   profileForm = new FormGroup({
     firstName: new FormControl('', [this.createCustomValidator()]),
     lastName: new FormControl('', Validators.maxLength(10)),
